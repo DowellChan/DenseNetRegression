@@ -2,7 +2,7 @@
 key parameters: blocks and input_length
 blocks: the number of building block. Each building block contains three fully connected layers.
 input_length: the size of input feature.
-Ref: Chao Jiang, Canchen Jiang, Dongwei Chen, and Fei Hu. Densely connected neural network for nonlinear regression. https://arxiv.org/abs/2108.00864
+Ref: Chao Jiang, Canchen Jiang, Dongwei Chen, and Fei Hu. Densely connected neural network for nonlinear regression.2021. https://arxiv.org/abs/2108.00864
 """
 from tensorflow.keras import layers,models,optimizers
 from tensorflow.keras import callbacks
