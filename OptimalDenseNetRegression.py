@@ -1,8 +1,8 @@
 """Optimal DenseNet regression models.
-key parameters: 
+key parameters: blocks and input_length
 blocks: the number of building block. Each building block contains three fully connected layers.
 input_length: the size of input feature.
-Ref: Jiang et al. (2021). Densely connected neural network for nonlinear regression. Environmental modeling & software. (under review)
+Ref: Chao Jiang, Canchen Jiang, Dongwei Chen, and Fei Hu. Densely connected neural network for nonlinear regression. https://arxiv.org/abs/2108.00864
 """
 from tensorflow.keras import layers,models,optimizers
 from tensorflow.keras import callbacks
