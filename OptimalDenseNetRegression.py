@@ -97,9 +97,9 @@ X_train, X_test, y_train, y_test = train_test_split(xscale, yscale,test_size=0.2
 blocks = 6
 model = DenseNet(blocks)
 #define learning rate. The default learning rate for adam is 0.001. To make validation loss more stable, we set learning rate as 0.0001
-#opt = optimizers.Adam(learning_rate=0.0001)
-#model.compile(loss='mse', optimizer=opt, metrics=['mse'])
-model.compile(loss='mse', optimizer='adam', metrics=['mse'])
+opt = optimizers.Adam(learning_rate=0.0001)
+model.compile(loss='mse', optimizer=opt, metrics=['mse'])
+#model.compile(loss='mse', optimizer='adam', metrics=['mse'])
 model.summary()
 
 #compute running time
